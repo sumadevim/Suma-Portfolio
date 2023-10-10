@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,12 +42,11 @@
         <p>Web Developer</p>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Bio</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
+        <a href="#bio">Bio</a>
+        <a href="#portfolio">Portfolio</a>
     </nav>
-    <section class="container">
+    
+    <section class="container" id="bio">
         <h2>Bio</h2>
         <p>Write your bio data here.</p>
         <ul>
@@ -25,6 +55,21 @@
             <li><strong>Location:</strong> Your City, Country</li>
             <!-- Add more bio data as needed -->
         </ul>
+    </section>
+
+    <section class="container" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <!-- Add images, links, and additional project details here -->
+        </div>
+        
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <!-- Add images, links, and additional project details here -->
+        </div>
     </section>
 </body>
 </html>
